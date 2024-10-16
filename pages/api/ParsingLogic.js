@@ -12,7 +12,6 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-// POST /api/upload
 router.post("/upload", upload.array("files"), (req, res) => {
   if (!req.files) {
     return res.status(400).send("No files uploaded.");

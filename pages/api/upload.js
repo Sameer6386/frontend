@@ -14,7 +14,7 @@ const isValidFile = (filename) => {
   const validExtensions = [".js", ".jsx", ".ts", ".tsx", ".json", ".md"]; // Add more extensions as needed
   const fileExtension = path.extname(filename);
 
-  // Exclude node_modules, .env, and other unnecessary files
+  // Exclude node_modules,.env, and other unnecessary files
   if (
     filename.includes("node_modules") ||
     filename.includes(".env") ||
